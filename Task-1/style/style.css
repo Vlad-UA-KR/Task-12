@@ -455,21 +455,19 @@ a{
     background-color: #00c4c4;
 }
 
-.form__n-e-n:active,
-.form__message:active{
-    border-left: 5px solid #355b82;
-    background-color: rgb(53, 91, 130);
+.form__n-e-n:hover,
+.form__message:hover{
+    background-color: #03d3d3;
 }
-.active {
-    background-color: rgb(53, 91, 130);
-    position: absolute;
-    left: 165px;
-    top: 301px;
-    width: 5px;
-    height: 50px;
-    z-index: 25;
-  }
-  
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #00c4c4 inset !important;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
 
 
 /**----------main-adress-contacts--------------**/
@@ -508,6 +506,7 @@ a{
 }
 .container-form-contacts__button:hover{
     box-shadow: 0px 0px 1px 1px rgba(134, 134, 134, 0.5);
+    background-color: #03d3d3;
 }
 .container-form-contacts__button:active{
     box-shadow: 0px 0px 0px 0px ;
