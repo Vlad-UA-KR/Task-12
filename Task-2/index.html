@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/Normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./content/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sign in form</title>
+
+</head>
+
+<body class="wrapper">
+    <div class="modal">
+        <div class="background">
+        </div>
+        <input class="nav__radio _hidden _sign" type="radio" name="choose" id="sign-in" checked>
+        <label class="nav" for="sign-in">Sign in</label>
+        <div class="container-sign container">
+            <form class="container-sign__form form" action=" " method="get" id="sign">
+                <label class="form__label" for="username-sign">Username</label>
+                <input class="form__input" type="text" name="username-sign" id="name" form="sign" minlength="5"
+                    required>
+                <div class="error">must be 5+ symbols</div>
+                <label class="form__label" for="password-sign">Password</label>
+                <input class="form__input" type="password" form="sign" id="password-sign" name="password-sign"
+                    minlength="8" maxlength="16" required>
+                <div class="error">must be 8+ symbols</div>
+                <label class="form__label-checkbox">
+                    <input class="form__input-checkbox _hidden" type="checkbox" name="keep-sign" form="sign"><span
+                        class="form__checkbox"></span>Keep me signed
+                    in
+                </label>
+                <input class="form__btn" type="submit" value="Sign in" form="sign">
+                <a class="form__link _left" href="#">Forgot password</a>
+                <a class="form__link _right" href="#">Create an account</a>
+            </form>
+        </div>
+        <input class="nav__radio _hidden _join" type="radio" name="choose" id="join-us">
+        <label class="nav" for="join-us">Join us</label>
+        <div class="container-join container">
+            <form class="container-join__form form" action=" " method="get" id="join">
+                <label class="form__label" for="username-join">Username</label>
+                <input class="form__input" type="text" name="username-join" id="username-join" form="join" required
+                    minlength="5">
+                <div class="error">must be 5+ symbols</div>
+                <label class="form__label" for="password-join">Password</label>
+                <input class="form__input" type="password" id="password-join" form="join" name="password-join" required
+                    minlength="8" maxlength="16">
+                <div class="error">must be 8+ symbols</div>
+                <label class="form__label" for="password-join-repeat">Repeat password</label>
+                <input class="form__input" type="password" id="password-join-repeat" form="join"
+                    name="password-repeat-join" required minlength="8" maxlength="16">
+                <div class="error">passwords must be the same</div>
+                <input class="form__btn" type="submit" value="Join us" form="join">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
